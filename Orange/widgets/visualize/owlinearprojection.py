@@ -189,7 +189,7 @@ class LinearProjectionVizRank(VizRankDialog, OWComponent):
     def start_computation(self):
         self.n_attrs_spin.setValue(self.n_attrs)
         self.n_attrs_spin.lineEdit().deselect()
-        self.rank_table.setFocus(True)
+        self.rank_table.setFocus(Qt.FocusReason.OtherFocusReason)
         super().start_computation()
 
     def toggle(self):
